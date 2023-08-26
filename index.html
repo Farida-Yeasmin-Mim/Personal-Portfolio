@@ -16,7 +16,7 @@
 <body>
     
 
-<!--header design -->  
+<!----------------------header design ----------------------------->  
 <header class="header">  
  <a href="#" class="logo">Portfolio</a>
 
@@ -29,26 +29,27 @@
    <a href="#portfolio">Portfolio</a>
    <a href="#contact">Contact</a>
    
-   
-
  </nav>
 </header>
 
-<!-- home section design -->
+<!------------------------- home section design ---------------------------->
 <section class="home" id="home">
   <div class="home-content">
     <h3>Hello, It's Me</h3>
     <h1>Farida Yeasmin Mim</h1>
-    <h3>And I'm a <span>Frontend Developer</span></h3>
+    <h3>And I'm a <span class="'multiple-text"></span></h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita est dolorum temporibus distinctio, eligendi, dolores id asperiores illo quis sed perspiciatis beatae nam minus libero 
-      quo delectus qui consectetur. Dolorem?</p>
+      quo delectus qui consectetur. Dolorem?</p> <br> <br> <br>
+       <p><i class='bx bx-envelope' ></i>yeasminmim111@gmail.com</p>
+       <p><i class='bx bxs-phone-call'></i>01611448663</p>
+      
       <div class="social-media">
         <a href="#"><i class='bx bxl-facebook'></i></a>
         <a href="#"><i class='bx bxl-instagram'></i></a>
         <a href="#"><i class='bx bxl-linkedin'></i></a>
         <a href="#"><i class='bx bxl-github'></i></a>
       </div>
-     <a href="#" class="btn">Download Resume</a>
+     <a href="Images/cv.pdf" download class="btn">Download Resume</a>
   </div>
 
   <div class= "home-img">
@@ -57,7 +58,7 @@
 </section>
 
 
-<!-- about section design -->
+<!---------- about section design ----------->
 <section class="about" id="about">
  <div class="about-img">
   <img src="Images/2.jpg" alt="">
@@ -65,15 +66,63 @@
 
  <div class="about-content">
   <h2 class="heading">About <span>Me</span></h2>
-  <h3>Frontend Developer</h3>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, esse consequuntur sint alias magnam est debitis beatae vero repellendus voluptates quisquam magni eveniet similique, quia accusamus 
-    quibusdam rerum aliquid eius?</p>
-    <a href="#" class="btn">Read More</a>
+  <h3>Frontend Developer!</h3>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, ullam, beatae excepturi nisi culpa quas at accusamus rem esse tempore iure nemo ratione numquam ex temporibus nihil praesentium quisquam sit tempora porro! Quos nostrum, et quas odio alias quia doloribus aspernatur porro neque ratione mollitia possimus quod 
+    quaerat assumenda harum.</p>
+
+    <div class="tab-titles">
+      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+      <p class="tab-links" onclick="opentab('experiences')">Experience</p>
+      <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+    
+    <div class="tab-contents active-tab" id="skills">
+      <ul>
+        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+        <li><span>Web Development</span><br>Web interfaces</li>
+        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+      </ul>
+    </div>
+
+    <div class="tab-contents"  id="experiences">
+      <ul>
+        <li><span>NSUAC</span><br>Designing Web/App interfaces</li>
+        <li><span>Web Development</span><br>Web interfaces</li>
+        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+      </ul>
+    </div>
+
+    <div class="tab-contents" id="education">
+      <ul>
+        <li><span>BSC</span><br>  Computer Science and Engineering </li>
+        <li><span>HSC</span><br>Web interfaces</li>
+        <li><span>SSC</span><br>Designing Web interfaces</li>
+      </ul>
+    </div>
+
+
+    <script>
+           var tablinks = document.getElementsByClassName("tab-links");
+           var tabcontents = document.getElementsByClassName("tab-contents")
+           
+           function opentab(tabname) {
+            for (tablink of tablinks){
+              tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+           
+          }
+    </script>
+    <!-- <a href="#" class="btn">Read More</a> -->
  </div>
 </section>
 
 
-<!-- service section design -->
+<!-------------- service section design ---------------->
 <section class="services" id="services">
   <h2 class="heading">My <span>Services</span></h2>
 
@@ -108,12 +157,13 @@
 </section>
 
 
-<!-- portfolio section design-->
-<section class="portfolio" id=" portfolio">
+<!----------------- portfolio section design----------------->
+<section class="portfolio" id="portfolio">
   <h2 class="heading">Latest <span>Project</span></h2>
 
   <div class="portfolio-container">
-   <div class="portfolio-box">
+   
+    <div class="portfolio-box">
     <img src="Images/p.jpeg" alt="">
     <div class="portfolio-layer">
       <h4>Web Design</h4>
@@ -143,41 +193,81 @@
     </div>
   </div>
 
-  <div class="portfolio-box">
-    <img src="Images/p.jpeg" alt="">
-    <div class="portfolio-layer">
-      <h4>Web Design</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Nihil, nobis.</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
-    </div>
   </div>
-
-  <div class="portfolio-box">
-    <img src="Images/p.jpeg" alt="">
-    <div class="portfolio-layer">
-      <h4>Web Design</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Nihil, nobis.</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
-    </div>
-  </div>
-
-  <div class="portfolio-box">
-    <img src="Images/p.jpeg" alt="">
-    <div class="portfolio-layer">
-      <h4>Web Design</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur 
-        adipisicing elit. Nihil, nobis.</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
-    </div>
-  </div>
-
-  </div>
+   <br>
+   <br>
+   <br>
+  <a href="#" class="btn">See More</a>
+  <br>
+  <br>
 </section>
+
+
+<!---------------- contact section design ---------------------->
+<section class="contact" id="contact">
+ <h2 class="heading">Contact <span>Me!</span></h2>
+
+ <form name="submit-to-google-sheet">
+  <div class="input-box">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Email Address" required>
+    <input type="number" name="Contact Number" placeholder="Contact Number">
+    <input type="text" name="Email Subject" placeholder="Email Subject">
+  </div>
+  <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+  <input type="submit" value="Send Message" class="btn"> 
+</form>
+
+<span id="msg"> </span>
+</section>
+
+<!-------------------footer design -------------------------------->
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright & copy; 2023 by Mim | All Rights Reserved</p>
+  </div>
+
+  <div class="footer-iconTop">
+    <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
+
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- typed js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <!-- custom js-->
 <script src="JS/script.js"></script>
+
+
+
+<!-------- for Google Sheet message------->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyBvGSvK3eDnzPigKio3vAa4D0C2pn3fY54TByVnuldtZ0pJLGamDTrhMR6FrmQYgB2dQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully! Thanks :)"
+        setTimeout(function()
+        {
+           msg.innerHTML = ""
+        }, 6000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
 
 </body>
 </html>
