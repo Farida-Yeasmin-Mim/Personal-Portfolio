@@ -52,7 +52,8 @@ html {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background: #1b2930; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,7 +101,7 @@ html {
 }
 
 .home-img img {
-    width: 20vw;
+    width: 21vw;
     border-radius: 20px;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -192,7 +193,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     background: var(--second-bg-color);
 
 }
@@ -217,7 +218,7 @@ span {
 
 .about-content h2 {
     text-align: left;
-    line-height: 2.2;
+    line-height: 1.2;
 }
 
 .about-content h3 {
@@ -246,7 +247,7 @@ span {
     content: '';
     width: 0;
     height: 3px;
-    background: #ad9fee;
+    background: #e01aaf;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -474,6 +475,7 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    /* background: #1b2930;  */
 }
 
 .footer-text p {
